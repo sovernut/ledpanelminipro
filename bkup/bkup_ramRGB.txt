@@ -1,0 +1,66 @@
+library ieee;
+	use ieee.std_logic_1164.all;
+	use ieee.std_logic_arith.all;
+	use ieee.std_logic_unsigned.all;
+entity ram is
+	port(
+			clk, req_rx: in std_logic;
+			data : in std_logic_vector(7 downto 0);
+			ro, go, bo : out std_logic_vector(2047 downto 0));
+end ram;
+	architecture behave of ram is
+		type state_type is(
+		start_byte,
+		receive_pixelR,receive_pixelG,receive_pixelB,
+		plus_index);
+		signal state : state_type := start_byte;
+		--subtype byte is std_logic_vector(2047 downto 0);
+		signal R : std_logic_vector(2047 downto 0);
+		signal G : std_logic_vector(2047 downto 0);
+		signal B : std_logic_vector(2047 downto 0);
+		--type mem is array(0 to 2) of byte;
+		--signal ram3x2048: mem;
+		signal index : integer range 0 to 2047 := 2047;
+	begin
+		process(clk)
+			begin
+				if rising_edge(clk) then
+					case state is
+						when start_byte =>
+							if (req_rx = '1') then
+								if data = x"23" then
+									state <= receive_pixelR;
+								end if;
+							end if;
+						when receive_pixelR =>
+							if (req_rx ='1') then
+								R(index) <= data(0);
+								state <= receive_pixelG;
+							end if;
+						when receive_pixelG =>
+							if (req_rx ='1') then
+								G(index) <= data(0);
+								state <= receive_pixelB;
+							end if;
+						when receive_pixelB =>
+							if (req_rx ='1') then
+								B(index) <= data(0);
+								state <= plus_index;
+							end if;
+						when plus_index =>
+							if index > 0 then
+								index <= index - 1;
+								state <= receive_pixelR;
+							else
+								index <= 2047;
+								state <= start_byte;
+--								ro <=  R;
+--								go <=  G;
+--								bo <=  B;
+							end if;
+					end case;
+				end if;
+		end process;
+		
+	
+end behave;

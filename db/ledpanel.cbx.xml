@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ledpanel">
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_led_panel|ram:u0|altsyncram:B_rtl_0" CBX_FILE_NAME="altsyncram_luc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_led_panel|ram:u0|altsyncram:G_rtl_0" CBX_FILE_NAME="altsyncram_luc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main_led_panel|ram:u0|altsyncram:R_rtl_0" CBX_FILE_NAME="altsyncram_luc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

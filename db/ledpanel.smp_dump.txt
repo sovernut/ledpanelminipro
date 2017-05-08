@@ -1,0 +1,28 @@
+
+State Machine - |main_led_panel|rs232_rx:u1|state
+Name state.wait_for_stop_bit state.receive_bits state.wait_half_bit state.wait_for_rx_start 
+state.wait_for_rx_start 0 0 0 0 
+state.wait_half_bit 0 0 1 1 
+state.receive_bits 0 1 0 1 
+state.wait_for_stop_bit 1 0 0 1 
+
+State Machine - |main_led_panel|ram:u0|state
+Name state.plus_index state.receive_pixelB state.receive_pixelG state.receive_pixelR state.address_byte state.start_byte 
+state.start_byte 0 0 0 0 0 0 
+state.address_byte 0 0 0 0 1 1 
+state.receive_pixelR 0 0 0 1 0 1 
+state.receive_pixelG 0 0 1 0 0 1 
+state.receive_pixelB 0 1 0 0 0 1 
+state.plus_index 1 0 0 0 0 1 
+
+State Machine - |main_led_panel|ram:u0|ledpanel:LED|state
+Name state.s8 state.s7 state.s6 state.s5 state.s4 state.s3 state.s2 state.s1 state.s0 
+state.s0 0 0 0 0 0 0 0 0 0 
+state.s1 0 0 0 0 0 0 0 1 1 
+state.s2 0 0 0 0 0 0 1 0 1 
+state.s3 0 0 0 0 0 1 0 0 1 
+state.s4 0 0 0 0 1 0 0 0 1 
+state.s5 0 0 0 1 0 0 0 0 1 
+state.s6 0 0 1 0 0 0 0 0 1 
+state.s7 0 1 0 0 0 0 0 0 1 
+state.s8 1 0 0 0 0 0 0 0 1 

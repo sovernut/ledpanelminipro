@@ -1,0 +1,91 @@
+library ieee;
+	use ieee.std_logic_1164.all;
+	use ieee.std_logic_arith.all;
+	use ieee.std_logic_unsigned.all;
+entity ram is
+	port(
+			clk, req_rx: in std_logic;
+			data : in std_logic_vector(7 downto 0);
+			r, g, b : out std_logic_vector(2047 downto 0));
+end ram;
+	architecture behave of ram is
+		type state_type is(
+		start_byte,
+		receive_pixel,
+		plus_index,
+		stop_byte);
+		signal state : state_type := start_byte;
+		subtype byte is std_logic_vector(2047 downto 0);
+		type mem is array(0 to 2) of byte;
+		signal ram3x2048: mem;
+		signal index : integer range 0 to 2047 := 2047;
+	begin
+		process(clk)
+			begin
+				if rising_edge(clk) then
+					case state is
+						when start_byte =>
+							if (req_rx = '1') then
+								if data = x"23" then
+									state <= receive_pixel;
+								end if;
+							end if;
+						when receive_pixel =>
+							if (req_rx ='1') then
+								if data=x"41" then
+									ram3x2048(0)(index) <= '0';
+									ram3x2048(1)(index) <= '0';
+									ram3x2048(2)(index) <= '0';
+								elsif data=x"42" then
+									ram3x2048(0)(index) <= '0';
+									ram3x2048(1)(index) <= '0';
+									ram3x2048(2)(index) <= '1';
+								elsif data=x"43" then
+									ram3x2048(0)(index) <= '0';
+									ram3x2048(1)(index) <= '1';
+									ram3x2048(2)(index) <= '0';
+								elsif data=x"44" then
+									ram3x2048(0)(index) <= '0';
+									ram3x2048(1)(index) <= '1';
+									ram3x2048(2)(index) <= '1';
+								elsif data=x"45" then
+									ram3x2048(0)(index) <= '1';
+									ram3x2048(1)(index) <= '0';
+									ram3x2048(2)(index) <= '0';
+								elsif data=x"46" then
+									ram3x2048(0)(index) <= '1';
+									ram3x2048(1)(index) <= '0';
+									ram3x2048(2)(index) <= '1';
+								elsif data=x"47" then
+									ram3x2048(0)(index) <= '1';
+									ram3x2048(1)(index) <= '1';
+									ram3x2048(2)(index) <= '0';
+								elsif data=x"48" then
+									ram3x2048(0)(index) <= '1';
+									ram3x2048(1)(index) <= '1';
+									ram3x2048(2)(index) <= '1';
+								end if;
+							state <= plus_index;
+							end if;
+						when plus_index =>
+							if index > 0 then
+								index <= index - 1;
+								state <= receive_pixel;
+							else
+								state <= stop_byte;
+							end if;
+						when stop_byte =>
+							if (req_rx ='1') then
+								if data = x"24" then
+									state <= start_byte;
+								end if;
+							end if;
+					end case;
+				end if;
+		end process;
+		
+	R <=  ram3x2048(0);
+	G <=  ram3x2048(1);
+	B <=  ram3x2048(2);
+	
+end behave;
