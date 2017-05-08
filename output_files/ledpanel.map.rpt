@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ledpanel
-Mon May 08 15:49:15 2017
+Mon May 08 17:42:51 2017
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -59,15 +59,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 08 15:49:15 2017      ;
+; Analysis & Synthesis Status        ; Successful - Mon May 08 17:42:51 2017      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ledpanel                                   ;
 ; Top-level Entity Name              ; main_led_panel                             ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 5,790                                      ;
-;     Total combinational functions  ; 2,505                                      ;
-;     Dedicated logic registers      ; 3,389                                      ;
-; Total registers                    ; 3389                                       ;
+; Total logic elements               ; 5,777                                      ;
+;     Total combinational functions  ; 2,492                                      ;
+;     Dedicated logic registers      ; 3,385                                      ;
+; Total registers                    ; 3385                                       ;
 ; Total pins                         ; 16                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 6,144                                      ;
@@ -202,28 +202,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 5,790     ;
+; Estimated Total logic elements              ; 5,777     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2505      ;
+; Total combinational functions               ; 2492      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2363      ;
-;     -- 3 input functions                    ; 43        ;
-;     -- <=2 input functions                  ; 99        ;
+;     -- 4 input functions                    ; 2361      ;
+;     -- 3 input functions                    ; 41        ;
+;     -- <=2 input functions                  ; 90        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2453      ;
-;     -- arithmetic mode                      ; 52        ;
+;     -- normal mode                          ; 2444      ;
+;     -- arithmetic mode                      ; 48        ;
 ;                                             ;           ;
-; Total registers                             ; 3389      ;
-;     -- Dedicated logic registers            ; 3389      ;
+; Total registers                             ; 3385      ;
+;     -- Dedicated logic registers            ; 3385      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 16        ;
 ; Total memory bits                           ; 6144      ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 3544      ;
-; Total fan-out                               ; 22618     ;
+; Maximum fan-out                             ; 3540      ;
+; Total fan-out                               ; 22574     ;
 ; Average fan-out                             ; 3.70      ;
 +---------------------------------------------+-----------+
 
@@ -233,7 +233,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------+
-; |main_led_panel                           ; 2505 (1)          ; 3389 (0)     ; 6144        ; 0            ; 0       ; 0         ; 16   ; 0            ; |main_led_panel                                                          ; work         ;
+; |main_led_panel                           ; 2492 (1)          ; 3385 (0)     ; 6144        ; 0            ; 0       ; 0         ; 16   ; 0            ; |main_led_panel                                                          ; work         ;
 ;    |edge_detector:u3|                     ; 1 (1)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_led_panel|edge_detector:u3                                         ; work         ;
 ;    |ram:u0|                               ; 2434 (172)        ; 3350 (3284)  ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_led_panel|ram:u0                                                   ; work         ;
 ;       |altsyncram:B_rtl_0|                ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_led_panel|ram:u0|altsyncram:B_rtl_0                                ; work         ;
@@ -243,7 +243,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |altsyncram:R_rtl_0|                ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_led_panel|ram:u0|altsyncram:R_rtl_0                                ; work         ;
 ;          |altsyncram_luc1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_led_panel|ram:u0|altsyncram:R_rtl_0|altsyncram_luc1:auto_generated ; work         ;
 ;       |ledpanel:LED|                      ; 2262 (2262)       ; 66 (66)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_led_panel|ram:u0|ledpanel:LED                                      ; work         ;
-;    |rs232_rx:u1|                          ; 69 (69)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_led_panel|rs232_rx:u1                                              ; work         ;
+;    |rs232_rx:u1|                          ; 56 (56)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main_led_panel|rs232_rx:u1                                              ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -3392,9 +3392,9 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3389  ;
+; Total registers                              ; 3385  ;
 ; Number of registers using Synchronous Clear  ; 39    ;
-; Number of registers using Synchronous Load   ; 5     ;
+; Number of registers using Synchronous Load   ; 3     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 3311  ;
@@ -3422,12 +3422,12 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main_led_panel|rs232_rx:u1|data[6]             ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |main_led_panel|ram:u0|ledpanel:LED|addr[0]     ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |main_led_panel|ram:u0|ledpanel:LED|col[1]      ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |main_led_panel|rs232_rx:u1|data[5]             ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |main_led_panel|ram:u0|ledpanel:LED|addr[3]     ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |main_led_panel|ram:u0|ledpanel:LED|col[2]      ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |main_led_panel|rs232_rx:u1|bit_counter[2]      ;
-; 6:1                ; 13 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |main_led_panel|rs232_rx:u1|baudrate_counter[4] ;
-; 64:1               ; 6 bits    ; 252 LEs       ; 252 LEs              ; 0 LEs                  ; No         ; |main_led_panel|ram:u0|ledpanel:LED|Mux5        ;
+; 6:1                ; 9 bits    ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |main_led_panel|rs232_rx:u1|baudrate_counter[6] ;
+; 64:1               ; 6 bits    ; 252 LEs       ; 252 LEs              ; 0 LEs                  ; No         ; |main_led_panel|ram:u0|ledpanel:LED|Mux4        ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 6 LEs                ; 4 LEs                  ; No         ; |main_led_panel|rs232_rx:u1|state               ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |main_led_panel|rs232_rx:u1|state               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
@@ -3490,7 +3490,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value    ; Type                         ;
 +----------------+----------+------------------------------+
 ; system_speed   ; 50000000 ; Signed Integer               ;
-; baudrate       ; 9600     ; Signed Integer               ;
+; baudrate       ; 115200   ; Signed Integer               ;
 +----------------+----------+------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -3734,7 +3734,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:13     ;
+; Top            ; 00:00:14     ;
 +----------------+--------------+
 
 
@@ -3744,7 +3744,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon May 08 15:48:58 2017
+    Info: Processing started: Mon May 08 17:42:33 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ledpanel -c ledpanel
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
@@ -3845,15 +3845,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3072 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 6001 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5988 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 5793 logic cells
+    Info (21061): Implemented 5780 logic cells
     Info (21064): Implemented 192 RAM segments
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 441 megabytes
-    Info: Processing ended: Mon May 08 15:49:15 2017
-    Info: Elapsed time: 00:00:17
+    Info: Processing ended: Mon May 08 17:42:51 2017
+    Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:17
 
 

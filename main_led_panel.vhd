@@ -21,7 +21,7 @@ architecture behave of main_led_panel  is
 	component rs232_rx is
 	generic(
 		system_speed : integer := 50e6;
-		baudrate : integer := 9600);
+		baudrate : integer := 115200);
 	port(
 		clk_i : in std_logic;
 		rst_i : in std_logic;

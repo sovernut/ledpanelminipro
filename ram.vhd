@@ -122,7 +122,7 @@ end ram;
 								B(addr) <= TB;
 								index <= 63;
 								state <= start_byte;
---								if addr = 30 then
+--								if addr = 31 then
 --									R<= Rtmp;
 --									G<= Gtmp;
 --									B<= Btmp;

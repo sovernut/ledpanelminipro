@@ -3,32 +3,32 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'ram:u0|ledpanel:LED|clk_t'
-Slack : -8.586
-TNS   : -118.057
+Slack : -8.314
+TNS   : -145.091
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -4.669
-TNS   : -12893.271
+Slack : -4.339
+TNS   : -12112.586
 
 Type  : Slow 1200mV 85C Model Setup 'ram:u0|ledpanel:LED|nexts'
-Slack : -1.678
-TNS   : -12.070
-
-Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : -0.083
-TNS   : -0.083
+Slack : -1.400
+TNS   : -9.511
 
 Type  : Slow 1200mV 85C Model Hold 'ram:u0|ledpanel:LED|clk_t'
-Slack : -0.066
-TNS   : -0.066
+Slack : -0.522
+TNS   : -0.522
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -0.020
+TNS   : -0.020
 
 Type  : Slow 1200mV 85C Model Hold 'ram:u0|ledpanel:LED|nexts'
-Slack : 0.453
+Slack : 0.454
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.201
-TNS   : -5045.042
+TNS   : -5039.094
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ram:u0|ledpanel:LED|nexts'
 Slack : -3.201
@@ -39,24 +39,24 @@ Slack : -1.487
 TNS   : -49.071
 
 Type  : Slow 1200mV 0C Model Setup 'ram:u0|ledpanel:LED|clk_t'
-Slack : -8.173
-TNS   : -108.489
+Slack : -7.885
+TNS   : -134.789
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -4.369
-TNS   : -11905.486
+Slack : -4.032
+TNS   : -11078.126
 
 Type  : Slow 1200mV 0C Model Setup 'ram:u0|ledpanel:LED|nexts'
-Slack : -1.527
-TNS   : -11.011
-
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : -0.073
-TNS   : -0.073
+Slack : -1.282
+TNS   : -8.238
 
 Type  : Slow 1200mV 0C Model Hold 'ram:u0|ledpanel:LED|clk_t'
-Slack : 0.077
-TNS   : 0.000
+Slack : -0.381
+TNS   : -0.381
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -0.003
+TNS   : -0.003
 
 Type  : Slow 1200mV 0C Model Hold 'ram:u0|ledpanel:LED|nexts'
 Slack : 0.403
@@ -64,7 +64,7 @@ TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.201
-TNS   : -5045.042
+TNS   : -5039.094
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ram:u0|ledpanel:LED|nexts'
 Slack : -3.201
@@ -75,32 +75,32 @@ Slack : -1.487
 TNS   : -49.071
 
 Type  : Fast 1200mV 0C Model Setup 'ram:u0|ledpanel:LED|clk_t'
-Slack : -3.228
-TNS   : -34.875
+Slack : -3.151
+TNS   : -47.844
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -1.530
-TNS   : -3837.008
+Slack : -1.381
+TNS   : -3517.865
 
 Type  : Fast 1200mV 0C Model Setup 'ram:u0|ledpanel:LED|nexts'
-Slack : -0.182
-TNS   : -0.957
+Slack : -0.069
+TNS   : -0.323
 
 Type  : Fast 1200mV 0C Model Hold 'ram:u0|ledpanel:LED|clk_t'
-Slack : -0.270
-TNS   : -0.270
+Slack : -0.387
+TNS   : -0.387
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : -0.156
-TNS   : -0.156
+Slack : -0.097
+TNS   : -0.097
 
 Type  : Fast 1200mV 0C Model Hold 'ram:u0|ledpanel:LED|nexts'
-Slack : 0.186
+Slack : 0.187
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -4475.897
+TNS   : -4470.473
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ram:u0|ledpanel:LED|clk_t'
 Slack : -1.000

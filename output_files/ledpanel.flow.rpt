@@ -1,5 +1,5 @@
 Flow report for ledpanel
-Mon May 08 15:50:41 2017
+Mon May 08 17:44:21 2017
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon May 08 15:50:41 2017      ;
+; Flow Status                        ; Successful - Mon May 08 17:44:21 2017      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ledpanel                                   ;
 ; Top-level Entity Name              ; main_led_panel                             ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C10E144C8                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 4,245 / 10,320 ( 41 % )                    ;
-;     Total combinational functions  ; 2,505 / 10,320 ( 24 % )                    ;
-;     Dedicated logic registers      ; 3,389 / 10,320 ( 33 % )                    ;
-; Total registers                    ; 3389                                       ;
+; Total logic elements               ; 4,229 / 10,320 ( 41 % )                    ;
+;     Total combinational functions  ; 2,492 / 10,320 ( 24 % )                    ;
+;     Dedicated logic registers      ; 3,385 / 10,320 ( 33 % )                    ;
+; Total registers                    ; 3385                                       ;
 ; Total pins                         ; 16 / 95 ( 17 % )                           ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 6,144 / 423,936 ( 1 % )                    ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/08/2017 15:48:59 ;
+; Start date & time ; 05/08/2017 17:42:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ledpanel            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+----------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name    ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 9218726001145.149423333902448         ; --            ; --             ; --             ;
+; COMPILER_SIGNATURE_ID               ; 9218726001145.149424015403552         ; --            ; --             ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --             ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --             ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --             ; --             ;
@@ -96,12 +96,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 433 MB              ; 00:00:15                           ;
-; Fitter                    ; 00:01:01     ; 1.0                     ; 621 MB              ; 00:01:01                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 433 MB              ; 00:00:15                           ;
+; Fitter                    ; 00:00:59     ; 1.0                     ; 618 MB              ; 00:00:58                           ;
 ; Assembler                 ; 00:00:03     ; 1.0                     ; 387 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 429 MB              ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 374 MB              ; 00:00:07                           ;
-; Total                     ; 00:01:34     ; --                      ; --                  ; 00:01:31                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 425 MB              ; 00:00:07                           ;
+; EDA Netlist Writer        ; 00:00:08     ; 1.0                     ; 359 MB              ; 00:00:08                           ;
+; Total                     ; 00:01:35     ; --                      ; --                  ; 00:01:30                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
