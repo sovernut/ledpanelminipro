@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C10E144) Path("C:/Users/User/Desktop/LEDWRITER-master orgiginal/output_files/") File("ledpanel.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C10E144) Path("C:/Users/User/Desktop/ledwriter/ledpanelminipro/output_files/") File("ledpanel.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
